@@ -32,7 +32,7 @@ class XDEA {
     });
 
     let player = "";
-
+    
     while (player !== "q") {
       process.stdout.write("<user> ");
 
