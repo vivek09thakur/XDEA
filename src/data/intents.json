@@ -11,16 +11,25 @@
   "is anyone there?": [],
   "hey?": ["okay okay let me say", "what?"],
   "you dumbass": ["how dare you to call me dumbass"],
-  "so how's your day?": ["It was just an another average day, nothing special"],
+  "so how's your day?": [
+    "It was just an another average day, nothing special",
+    "none of your business"
+  ],
   "idiot": [
     "why did you called me an idiot?",
-    "i am not an idiot, but you are"
+    "i am not an idiot, but you are",
+    "i am not an idiot dumbass",
+    "you idiot"
   ],
   "Hello?": ["so what are you doing"],
   "AI?": [],
   "Are you listening to me or not?": ["I am , but you are not"],
-  "how was yours?": [],
+  "how was yours?": ["i am fine and you?"],
   "you are an idiot": [],
-  "creep": ["don't repeat me"],
-  "okay?": []
+  "creep": ["don't repeat me", "you are a creep not me"],
+  "okay?": ["yes bye"],
+  "understood?": ["okay"],
+  "basterd": [],
+  "ok": [],
+  "bye": []
 }
