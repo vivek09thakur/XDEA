@@ -6,10 +6,6 @@ class XDEA {
     this.intentFile = intentFile;
     this.Intents = JSON.parse(readFileSync(intentFile, 'utf-8'));
     this.qKeys = Object.keys(this.Intents);
-    // import(`${intentFile}`).then((module) => {
-    //   this.Intents = module.default;
-    //   this.qKeys = Object.keys(this.Intents);
-    // });
   }
 
   mostCommon(lst) {

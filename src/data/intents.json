@@ -1,14 +1,26 @@
 {
   "what is your name": [
     "I don't have any actual name but you can call me by my ID : XDEA",
-    "As an Machine Learning based chatbot I don't have any specific name"
+    "As an Machine Learning based chatbot I don't have any specific name",
+    "I am AI and you?",
+    "I've already told you my name"
   ],
   "hello": ["hello"],
-  "hello?": ["yes", "yeah, now say something"],
-  "hey": ["hello", "hey there"],
+  "hello?": ["yes", "yeah, now say something", "hey there", "what?"],
+  "hey": ["hello", "hey there", "hey"],
   "is anyone there?": [],
   "hey?": ["okay okay let me say", "what?"],
   "you dumbass": ["how dare you to call me dumbass"],
-  "so how's your day?": [],
-  "idiot": []
+  "so how's your day?": ["It was just an another average day, nothing special"],
+  "idiot": [
+    "why did you called me an idiot?",
+    "i am not an idiot, but you are"
+  ],
+  "Hello?": ["so what are you doing"],
+  "AI?": [],
+  "Are you listening to me or not?": ["I am , but you are not"],
+  "how was yours?": [],
+  "you are an idiot": [],
+  "creep": ["don't repeat me"],
+  "okay?": []
 }
