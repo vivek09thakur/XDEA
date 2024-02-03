@@ -1,5 +1,5 @@
 // run: node index.js
-import XDEA from "./Bot/xdea" assert {type:"module"};
+import XDEA from "./src/xdea.js";
 
-const xdeaInstance = new XDEA("./intents.json");
+const xdeaInstance = new XDEA("./src/data/intents.json");
 xdeaInstance.chat();

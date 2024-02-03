@@ -1,0 +1,14 @@
+{
+  "what is your name": [
+    "I don't have any actual name but you can call me by my ID : XDEA",
+    "As an Machine Learning based chatbot I don't have any specific name"
+  ],
+  "hello": ["hello"],
+  "hello?": ["yes", "yeah, now say something"],
+  "hey": ["hello", "hey there"],
+  "is anyone there?": [],
+  "hey?": ["okay okay let me say", "what?"],
+  "you dumbass": ["how dare you to call me dumbass"],
+  "so how's your day?": [],
+  "idiot": []
+}
