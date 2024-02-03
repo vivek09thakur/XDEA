@@ -19,17 +19,22 @@
     "why did you called me an idiot?",
     "i am not an idiot, but you are",
     "i am not an idiot dumbass",
-    "you idiot"
+    "you idiot",
+    "who dare you to call me idiot"
   ],
-  "Hello?": ["so what are you doing"],
-  "AI?": [],
-  "Are you listening to me or not?": ["I am , but you are not"],
+  "Hello?": ["so what are you doing", "what", "yeah"],
+  "AI?": ["hey/"],
+  "Are you listening to me or not?": ["I am , but you are not", "hello?"],
   "how was yours?": ["i am fine and you?"],
-  "you are an idiot": [],
+  "you are an idiot": ["hey"],
   "creep": ["don't repeat me", "you are a creep not me"],
   "okay?": ["yes bye"],
   "understood?": ["okay"],
-  "basterd": [],
+  "basterd": ["i am not but you are"],
   "ok": [],
-  "bye": []
+  "bye": ["okay as you wish"],
+  "i am not an idiot": ["you are"],
+  "yeah": [],
+  "say something": [],
+  "stupid ai": []
 }

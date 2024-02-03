@@ -1,10 +1,10 @@
-import { writeFileSync,readFileSync } from "fs";
+import { writeFileSync, readFileSync } from "fs";
 import { createInterface } from "readline";
 
 class XDEA {
   constructor(intentFile) {
     this.intentFile = intentFile;
-    this.Intents = JSON.parse(readFileSync(intentFile, 'utf-8'));
+    this.Intents = JSON.parse(readFileSync(intentFile, "utf-8"));
     this.qKeys = Object.keys(this.Intents);
   }
 
@@ -34,26 +34,28 @@ class XDEA {
     let player = "";
 
     while (player !== "q") {
-      process.stdout.write(">_ ");
+      process.stdout.write("<user> ");
 
       player = await new Promise((resolve) => {
-        rl.question("", resolve);
+        rl.question("<user> ", resolve);
       });
 
       if (!this.Intents[player]) {
         this.Intents[player] = [];
         this.qKeys.push(player);
       } else {
-        process.stdout.write(`>_ ${this.mostCommon(this.Intents[player])}\n`);
+        process.stdout.write(
+          `<xdea> ${this.mostCommon(this.Intents[player])}\n`
+        );
       }
 
       const question =
         this.qKeys[Math.floor(Math.random() * this.qKeys.length)];
-      process.stdout.write(`>_ ${question}\n`);
-      process.stdout.write(">_ ");
+      process.stdout.write(`<xdea> ${question}\n`);
+      process.stdout.write("<response learned>");
 
       player = await new Promise((resolve) => {
-        rl.question("", resolve);
+        rl.question("<user> ", resolve);
       });
 
       let a = this.Intents[question] || [];
