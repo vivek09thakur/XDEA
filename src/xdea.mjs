@@ -1,5 +1,4 @@
 import { writeFileSync, readFileSync } from "fs";
-import { createInterface } from "readline";
 
 class XDEA {
   constructor(intentFile) {
@@ -25,50 +24,28 @@ class XDEA {
     writeFileSync(this.intentFile, JSON.stringify(this.Intents, null, 2));
   }
 
-  async chat() {
-    const rl = createInterface({
-      input: process.stdin,
-      output: process.stdout,
-    });
+  async chat(message) {
+    let player = message.content;
 
-    let player = "";
-    
-    while (player !== "q") {
-      process.stdout.write("<user> ");
-
-      player = await new Promise((resolve) => {
-        rl.question("<user> ", resolve);
-      });
-
-      if (!this.Intents[player]) {
-        this.Intents[player] = [];
-        this.qKeys.push(player);
-      } else {
-        process.stdout.write(
-          `<xdea> ${this.mostCommon(this.Intents[player])}\n`
-        );
-      }
-
-      const question =
-        this.qKeys[Math.floor(Math.random() * this.qKeys.length)];
-      process.stdout.write(`<xdea> ${question}\n`);
-      process.stdout.write("<response learned>");
-
-      player = await new Promise((resolve) => {
-        rl.question("<user> ", resolve);
-      });
-
-      let a = this.Intents[question] || [];
-      if (!Array.isArray(a)) {
-        a = [a];
-      }
-
-      a.push(player);
-      this.Intents[question] = a;
-      this.saveIntents();
+    if (!this.Intents[player]) {
+      this.Intents[player] = [];
+      this.qKeys.push(player);
+    } else {
+      message.channel.send(`<xdea> ${this.mostCommon(this.Intents[player])}`);
     }
 
-    rl.close();
+    const question = this.qKeys[Math.floor(Math.random() * this.qKeys.length)];
+    message.channel.send(`<xdea> ${question}`);
+    message.channel.send("<response learned>");
+
+    let a = this.Intents[question] || [];
+    if (!Array.isArray(a)) {
+      a = [a];
+    }
+
+    a.push(player);
+    this.Intents[question] = a;
+    this.saveIntents();
   }
 }
 

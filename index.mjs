@@ -1,5 +1,21 @@
-// run: node index.js
 import XDEA from "./src/xdea.mjs";
+import { Client, Intents as DiscordIntents } from "discord.js";
 
-const modelInstance = new XDEA("./src/intents/intents.json");
-modelInstance.chat();
+const bot = new XDEA("./src/intents/intents.json");
+const client = new Client({
+  intents: [
+    DiscordIntents.FLAGS.GUILD_MESSAGES,
+    DiscordIntents.FLAGS.GUILD_MESSAGE_CONTENT,
+  ],
+});
+
+client.on("ready", () => {
+  console.log(`Logged in as ${client.user.tag}!`);
+});
+
+client.on("messageCreate", (message) => {
+  if (message.author.bot) return;
+  bot.chat(message);
+});
+
+client.login(process.env.DISCORD_TOKEN);
