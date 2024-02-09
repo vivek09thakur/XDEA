@@ -1,4 +1,4 @@
-import XDEA from "./xdea.mjs";
+import XDEA from "./xdea.js";
 import { Client, Intents as DiscordIntents } from "discord.js";
 
 const bot = new XDEA("./intents.json");
