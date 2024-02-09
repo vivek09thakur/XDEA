@@ -1,7 +1,7 @@
-import XDEA from "./src/xdea.mjs";
+import XDEA from "./xdea.mjs";
 import { Client, Intents as DiscordIntents } from "discord.js";
 
-const bot = new XDEA("./src/intents/intents.json");
+const bot = new XDEA("./intents.json");
 const client = new Client({
   intents: [
     DiscordIntents.FLAGS.GUILD_MESSAGES,
