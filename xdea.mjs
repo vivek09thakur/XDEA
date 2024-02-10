@@ -34,7 +34,6 @@ class XDEA {
     let player = "";
 
     while (player !== "q") {
-      process.stdout.write("<user> ");
 
       player = await new Promise((resolve) => {
         rl.question("<user> ", resolve);
@@ -45,14 +44,13 @@ class XDEA {
         this.qKeys.push(player);
       } else {
         process.stdout.write(
-          `<xdea> ${this.mostCommon(this.Intents[player])}\n`
+          `<xdea> ${this.mostCommon(this.Intents[player])} `
         );
       }
 
       const question =
         this.qKeys[Math.floor(Math.random() * this.qKeys.length)];
       process.stdout.write(`<xdea> ${question}\n`);
-      process.stdout.write("<response learned>");
 
       player = await new Promise((resolve) => {
         rl.question("<user> ", resolve);
