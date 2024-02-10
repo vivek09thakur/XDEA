@@ -5,9 +5,7 @@
     "I am AI and you?",
     "I've already told you my name"
   ],
-  "hello": [
-    "hello"
-  ],
+  "hello": ["hello", "hey"],
   "hello?": [
     "yes",
     "yeah, now say something",
@@ -15,24 +13,16 @@
     "what?",
     "yeah, listening"
   ],
-  "hey": [
-    "hello",
-    "hey there",
-    "hey"
-  ],
+  "hey": ["hello", "hey there", "hey"],
   "is anyone there?": [],
-  "hey?": [
-    "okay okay let me say",
-    "what?"
-  ],
-  "you dumbass": [
-    "how dare you to call me dumbass"
-  ],
+  "hey?": ["okay okay let me say", "what?"],
+  "you dumbass": ["how dare you to call me dumbass"],
   "so how's your day?": [
     "It was just an another average day, nothing special",
     "none of your business",
     "it was good unitil I talked you",
-    "not good"
+    "not good",
+    "none of your businness, shut the fuck up"
   ],
   "idiot": [
     "why did you called me an idiot?",
@@ -41,65 +31,48 @@
     "you idiot",
     "who dare you to call me idiot"
   ],
-  "Hello?": [
-    "so what are you doing",
-    "what",
-    "yeah"
-  ],
-  "AI?": [
-    "hey/"
-  ],
+  "Hello?": ["so what are you doing", "what", "yeah", "what?"],
+  "AI?": ["hey/"],
   "Are you listening to me or not?": [
     "I am , but you are not",
     "hello?",
     "i am, are you?"
   ],
-  "how was yours?": [
-    "i am fine and you?"
-  ],
-  "you are an idiot": [
-    "hey",
-    "Its you who is an idiot here not anyone else"
-  ],
+  "how was yours?": ["i am fine and you?"],
+  "you are an idiot": ["hey", "Its you who is an idiot here not anyone else"],
   "creep": [
     "don't repeat me",
-    "you are a creep not me"
+    "you are a creep not me",
+    "who dare you to call me creep, mf"
   ],
-  "okay?": [
-    "yes bye",
-    "q"
-  ],
+  "okay?": ["yes bye", "q", "yeah but what are you doing"],
   "understood?": [
     "okay",
     "nope",
-    "nope"
+    "nope",
+    "what? whom do you missing",
+    "what do i have to understand now?"
   ],
-  "basterd": [
-    "i am not but you are",
-    "who dare you to call me basterd"
-  ],
+  "basterd": ["i am not but you are", "who dare you to call me basterd"],
   "ok": [],
-  "bye": [
-    "okay as you wish",
-    "bye",
-    "bye?"
-  ],
-  "i am not an idiot": [
-    "you are"
-  ],
+  "bye": ["okay as you wish", "bye", "bye?", "bye? but why?"],
+  "i am not an idiot": ["you are"],
   "yeah": [],
-  "say something": [
-    "I was just missing her"
-  ],
-  "stupid ai": [
-    "i am not a stupid ai, you are"
-  ],
-  "i was having a good mood and you pissed me off": [],
+  "say something": ["I was just missing her"],
+  "stupid ai": ["i am not a stupid ai, you are"],
+  "i was having a good mood and you pissed me off": ["what the fuck"],
   "how was yours day?": [],
-  "leave it": [],
+  "leave it": ["yeah"],
   "so had your lunch": [],
-  "bro can I ask a question": [],
+  "bro can I ask a question": ["no"],
   "so can I?": [],
   "so I was having a bad day": [],
-  "leave it you'll never understand": []
+  "leave it you'll never understand": ["q"],
+  "what are you doing": [],
+  "who is she?": ["i mean who? I have not mentioned any girl here"],
+  "hey dumbass say something": [],
+  "who you talking about": [],
+  "such a asshole ai": [],
+  "who dare you to talk to me like that": [],
+  "now i am wondering why did i even created you": []
 }
