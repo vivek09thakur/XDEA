@@ -45,7 +45,7 @@ class XDEA {
         this.qKeys.push(player);
       } else {
         process.stdout.write(
-          `<xdea> ${this.mostCommon(this.Intents[player])}\n`
+          `<xdea> ${this.mostCommon(this.Intents[player])} `
         );
       }
 
