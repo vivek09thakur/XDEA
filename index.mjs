@@ -1,29 +1,25 @@
-import { Client, Intents } from "discord.js";
-import XDEA from "./src/xdea.mjs";
+import pkg from 'discord.js';
+const { Client, Intents } = pkg;
 
-const client = new Client({ intents: [Intents.Guilds, Intents.GuildMessages] });
-
-client.once("ready", () => {
-  console.log("Ready!");
+const client = new Client({
+    intents: [
+        Intents.FLAGS.Guilds,
+        Intents.FLAGS.GuildMessages,
+        Intents.FLAGS.DirectMessages
+    ]
 });
 
-client.on("messageCreate", (message) => {
-  if (message.author.id === client.user.id) return;
-  const xdeaBot = new XDEA("./save/intents.json");
-
-  if (xdeaBot.Intents[message.content]) {
-    message.channel.send(xdeaBot.mostCommon(xdeaBot.Intents[message.content]));
-  } else {
-    xdeaBot.Intents[message.content] = [];
-    xdeaBot.qKeys.push(message.content);
-  }
-
-  const randomQuestion =
-    xdeaBot.qKeys[Math.floor(Math.random() * xdeaBot.qKeys.length)];
-  message.channel.send(`<@${message.author.id}> <xdea> ${randomQuestion}`);
-
-  xdeaBot.Intents[randomQuestion].push("<response learned>");
-  xdeaBot.saveIntents();
+// Event: Bot is ready
+client.once('ready', () => {
+    console.log(`Logged in as ${client.user.tag}!`);
 });
 
-client.login("your-bot-token");
+// Event: Bot receives a message
+client.on('messageCreate', (message) => {
+    if (message.content === '!hello') {
+        message.channel.send('Hello, I am your Discord bot!');
+    }
+});
+
+// Log in with your bot token
+client.login('MTIwNTUyMTQzI0NDI4ODU4Mg.GZgDLy.t5ABYz34Wk72hAeX_okaktR8wUIQLKLBEsmrEQ');
